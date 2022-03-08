@@ -1,1 +1,1 @@
-web: bin/gin-mongo-api
+web: bin/go-user-rest-api
