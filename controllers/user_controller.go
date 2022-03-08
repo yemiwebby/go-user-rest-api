@@ -54,6 +54,15 @@ func CreateUser() gin.HandlerFunc {
 	}
 }
 
+func HomePage() gin.HandlerFunc {
+	return func(ctx *gin.Context) {
+		ctx.JSON(http.StatusOK, gin.H{
+			"status": "success",
+			"message": "Welcome here!",
+		})
+	}
+}
+
 func GetAUser() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
