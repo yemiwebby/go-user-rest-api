@@ -6,10 +6,12 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
+	cors "github.com/rs/cors/wrapper/gin"
 )
 
 func main() {
         router := gin.Default()
+		router.Use(cors.Default())
   
 		configs.ConnectDB()
 
@@ -21,6 +23,5 @@ func main() {
 			port = "3000"
 		}
   
-        // router.Run("localhost:6000")
 		router.Run(":" + port) 
 }
