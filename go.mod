@@ -5,6 +5,7 @@ go 1.17
 require github.com/rs/cors/wrapper/gin v0.0.0-20220223021805-a4a5ce87d5a2
 
 require (
+	github.com/gin-contrib/cors v1.3.1 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/gin-gonic/gin v1.7.7 // indirect
 	github.com/go-playground/locales v0.14.0 // indirect
